@@ -1,0 +1,68 @@
+﻿@model authTest.Models.Putovanje
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 style="margin-left:20%">Izbriši</h1>
+
+<h3 style="margin-left:20%">Da li ste sigurni da želite izbrisati ovu ponudu?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.Slika)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Slika)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.Destinacija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Destinacija)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.Info)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Info)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.Aktuelno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Aktuelno)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.DatumPolaska)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatumPolaska)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.DatumPovratka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatumPovratka)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.MinBrojLjudi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MinBrojLjudi)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.MaxBrojLjudi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaxBrojLjudi)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input style="margin-left:20%" type="submit" value="Izbriši" class="btn btn-info" /> |
+        <a asp-action="Index">Odustani</a>
+    </form>
+</div>

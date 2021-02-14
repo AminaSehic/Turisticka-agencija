@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Vaša rezervacija";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <div  style="margin-left:20%;">
+        <h4>Uspješno ste rezervisali</h4>
+        <p></p>
+        <p> Cijena vaše rezervacije je: @ViewBag.Suza KM</p>
+        <input type="button"
+               style="margin-left: 2%"
+               class="btn btn-info"
+               value="Ok"
+               onclick="location.href='/Putovanje/Index'" />
+    </div>
